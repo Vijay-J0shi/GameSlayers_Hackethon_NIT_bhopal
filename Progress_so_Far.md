@@ -17,3 +17,9 @@ Commit 3 -
 -Started coding for the web pages. 
 - Gathered more data and added the same in our model.
 - The model has been put on for training again and hyperparameters are being tweaked in order to reduce loss value.
+
+  Commit 4 -
+- we have completed with the frontend development of two pages of our web application.
+- Ready with the layouts of all the pages of our web application.
+- The detection model is ready.
+- Computer vision code is ready. However, debugging is still left to do.
