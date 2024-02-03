@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Segregation</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .tag {
+            color: #ffffffbd;
+            font-size: x-large;
+            text-decoration: none;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 1rem;
+            padding: 0;
+        }
+
+        li {
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        li a:hover {
+            font-size: xx-large;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo,
+        .title {
+            margin: 10px;
+        }
+
+        .logo h1,
+        .title h1,
+        .subtitle,
+        p {
+            font-size: x-large;
+            color: white;
+            text-align: center;
+        }
+
+        #but1 {
+            width: 17vw;
+            height: 3rem;
+            font-size: xx-large;
+            background-color: #36367d;
+            color: cornsilk;
+            border-radius: 1rem;
+            cursor: pointer;
+            margin-top: 2rem;
+        }
+
+        #but1:hover {
+            width: 18vw;
+            height: 3rem;
+            background-color: #323293;
+        }
+
+        /* Adjustments for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .header-container {
+                margin-top: 10px;
+            }
+
+            .logo,
+            .title {
+                margin: 5px;
+            }
+
+            .subtitle,
+            p {
+                font-size: medium;
+            }
+
+            #but1 {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="tag" href="">Home</a></li>
+                <li><a class="tag" href="">About</a></li>
+                <li><a class="tag" href="">Join</a></li>
+                <li><a class="tag" href="">Contact</a></li>
+                <li><a class="tag" href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>ECOSORT</h1>
+        </div>
+        <div class="title">
+            <h1>Automated Waste Segregation</h1>
+        </div>
+    </div>
+    <p>Smart sorting, Smarter recycling</p>
+    <div>
+        <p class="subtitle">How ECOSORT Works?</p>
+    </div>
+    <hr style="width:73vw; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+    <div style="display:flex; margin: 0 7vw;">
+        <!-- Rest of the content remains unchanged -->
+    </div>
+    <hr style="width:73vw; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+    <div style="text-align: center;">
+        <button id="but1">Try Now</button>
+    </div>
+</body>
+
+</html>

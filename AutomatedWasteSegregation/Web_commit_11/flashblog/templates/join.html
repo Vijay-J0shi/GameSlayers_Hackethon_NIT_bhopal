@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Segregation</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+        }
+
+        .tag {
+            color: #ffffffbd;
+            font-size: x-large;
+            text-decoration: none;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        li a:hover {
+            font-size: xx-large;
+        }
+
+        h1,
+        h3,
+        p {
+            color: white;
+            margin: 0;
+        }
+
+        /* General container styles */
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5vw;
+        }
+
+        /* Section styles */
+        .section {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        .section img {
+            border-radius: 50px;
+            margin-left: 1rem;
+            margin-top: 2rem;
+            width: 250px;
+            height: 250px;
+        }
+
+        /* Button styles */
+        .button {
+            width: 9vw;
+            height: 2.5rem;
+            font-size: x-large;
+            margin-left: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 1rem;
+        }
+
+        #but2 {
+            width: 12vw;
+        }
+
+        #but3 {
+            width: 15vw;
+        }
+
+        /* Horizontal line styles */
+        .hr-line {
+            width: 90vw;
+            margin-left: -5vw;
+            margin-top: 3rem;
+        }
+
+        /* Adjustments for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .container {
+                margin-left: 2vw;
+            }
+
+            .section img {
+                width: 100%;
+                height: auto;
+            }
+
+            .button {
+                width: 80%;
+                margin-left: 0;
+            }
+
+            #but2 {
+                width: 80%;
+            }
+
+            #but3 {
+                width: 80%;
+            }
+
+            .hr-line {
+                width: 80vw;
+                margin-left: -4vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a class="tag" href="">Home</a></li>
+                <li><a class="tag" href="">About</a></li>
+                <li><a class="tag" href="">Join</a></li>
+                <li><a class="tag" href="">Contact</a></li>
+                <li><a class="tag" href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>ECOSORT REVOLUTION -</h1>
+        <p>Join Our Community for a Greener Future!</p>
+
+        <div class="section">
+            <img src="static\WhatsApp Image 2024-02-02 at 9.38.55 PM.jpeg" alt="Loading...">
+            <div>
+                <h3>As a Supporter</h3>
+                <p>Contribute to waste segregation efforts by optimizing our solution.</p>
+                <button class="button">Support us</button>
+            </div>
+        </div>
+
+        <hr class="hr-line">
+
+        <div class="section">
+            <img src="static\WhatsApp Image 2024-02-02 at 9.39.50 PM.jpeg" alt="Loading...">
+            <div>
+                <h3>As a Partner</h3>
+                <p>ECOSORT offers waste Segregation solutions to local communities, businesses, and organizations to
+                    reduce cost and time by optimizing waste management processes.</p>
+                <button id="but2" class="button">Partner with us</button>
+            </div>
+        </div>
+
+        <hr class="hr-line">
+
+        <div class="section">
+            <img src="static\WhatsApp Image 2024-02-02 at 9.40.17 PM.jpeg" alt="Loading...">
+            <div>
+                <h3>As a Collaborator</h3>
+                <p>Join our team of passionate individuals working together towards a greener and safe space to live
+                    in.</p>
+                <button id="but3" class="button">Collaborate with us</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
