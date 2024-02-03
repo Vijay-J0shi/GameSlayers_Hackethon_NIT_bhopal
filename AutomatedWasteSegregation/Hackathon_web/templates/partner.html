@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Waste Segregation
+
+    </title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+        .my-textarea{
+            font-size:large
+        }
+        .text{
+            color:#adacac;
+            font-size:large
+        
+        }
+        .but2{
+            width: 12vw;
+            height: 3vw;
+            border-radius: 12px;
+            font-size: x-large;
+            color: black;
+            background-color: #c1bebe;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div style="display: flex;">
+        <div>
+            <h1 style="color:white;margin-left: 7vw;">ECOSORT Partnership :</h1>
+
+        </div>
+        <div style="margin-left:7px">
+            <p style="font-size: xx-large;margin-top:1.3rem;color:white;text-decoration: underline;">Redefinig Waste Management Together</p>
+
+        </div>
+    </div>
+    <div style="display: flex;">
+        <div>
+            <img src="..\static\WhatsApp Image 2024-02-03 at 4.18.18 AM.jpeg" style="margin-left: 11vw;width: 313px;" alt="Loading...">
+
+        </div>
+        <div style="width: 34vw;font-size: larger;margin-left: 6vw;">
+            <p style="color:white">Partnering with ECOSORT opens doors to innovative waste management solutions tailored to your needs. Businesses, communities, and organizations can integrate our cutting-edge waste segregation system into smart bins or advanced sensors to enhance their waste management processes. By integrating ECOSORT technology, partners can optimize waste sorting efficiency, reduce costs, and contribute to a more sustainable future.<br><br>
+                Whether you're looking to implement automated waste segregation in public spaces, businesses, or large-scale facilities, ECOSORT offers customizable solutions to fit your unique requirements.</p>
+        </div>
+        
+    </div>
+    <form method="POST" action="" style="margin-left: 12vw;margin-top: 2rem;">
+        {{form.hidden_tag()}} 
+        <fieldset style="margin-bottom: 2rem;margin-right:28vw">
+            <legend style= "color:white;font-size:x-large">Organization Information</legend>
+            <div style="color:white;margin-bottom: 8px;">
+                {{form.company_name.label(class="text")}}
+                <br>
+                {{form.company_name}}
+                {% if form.company_name.errors %}
+                    {% for error in form.comapny_name.errors%}
+                        <small>{{error}}</small>
+                    {% endfor %} 
+
+                {% endif %}  
+            </div>
+    
+            <div style="color:white">
+                {{form.industry.label(class="text")}}
+                <br>
+                {{form.industry}}
+                <br>
+                
+                {% if form.industry.errors %}
+                    
+                    {% for error in form.industry.errors%}
+                        <small>{{error}}</small>
+                    {% endfor %}    
+            
+    
+                {% endif %}    
+            </div>
+            
+        </fieldset>
+
+        <fieldset style="margin-bottom: 2rem;;margin-right:28vw">
+            <legend style="color:white;font-size:x-large">Contact Information</legend>
+            <div style="color:white ;margin-bottom: 8px;">
+                {{form.contact_person_name.label(class="text")}}
+                <br>
+                {{form.contact_person_name}}
+                <br>
+                {% if form.contact_person_name.errors %}
+                    
+                    {% for error in form.contact_person_name.errors%}
+                        <small>{{error}}</small>
+                    {% endfor %}    
+            
+    
+                {% endif %}  
+            </div>
+            
+            <div style="color:white ;margin-bottom: 8px;">
+                {{form.position.label(class="text")}}
+                <br>
+                {{form.position}}
+                <br>
+                {% if form.position.errors %}
+                    
+                    {% for error in form.contact_person_name.errors%}
+                        <small>{{error}}</small>
+                    {% endfor %}    
+            
+    
+                {% endif %}  
+            </div>
+
+            <div style="color:white ;margin-bottom: 8px;">
+                {{form.email.label(class="text")}}
+                <br>
+                {{form.email}}
+                <br>
+                {% if form.email.errors %}
+                    
+                    {% for error in form.email.errors%}
+                        <small>{{error}}</small>
+                    {% endfor %}    
+            
+    
+                {% endif %}  
+            </div>
+            <div style="color:white">
+                {{form.phone.label(class="text")}}
+                <br>
+                {{form.phone}}
+                <br>
+                {% if form.phone.errors %}
+                    
+                    {% for error in form.phone.errors%}
+                        <small>{{error}}</small>
+                    {% endfor %}    
+            
+    
+                {% endif %}  
+            </div>
+            
+        </fieldset>
+        <fieldset style="margin-bottom: 2rem;;margin-right:28vw">
+            <legend style="color:white;font-size:x-large">Collaboration objective</legend>
+            <div style="color:white ;margin-bottom: 8px;">
+                {{form.content(class="my-textarea")}}
+                <br>
+                {% if form.content.errors %}
+                    
+                    {% for error in form.content.errors%}
+                        <small>{{error}}</small>
+                    {% endfor %}    
+            
+    
+                {% endif %}  
+            </div>
+        </fieldset>
+        <fieldset style="margin-right:28vw">
+            <legend style="color:white;font-size:x-large">Integration Details</legend>
+            <div style="color:white">
+                {{form.integration(class="my-textarea")}}
+                <br>
+                {% if form.integration.errors %}
+                    
+                    {% for error in form.integration.errors%}
+                        <small>{{error}}</small>
+                    {% endfor %}    
+            
+    
+                {% endif %}  
+            </div>
+        </fieldset>
+        <div style="color:white; margin-left: 24vw;margin-top: 1vw;">
+            <br>
+            {{form.submit(class="but2")}}  <!-- give a button with sign-up label -->
+        </div>
+
+    </form>
+
+</body>
