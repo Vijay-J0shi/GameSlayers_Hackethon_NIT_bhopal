@@ -2,12 +2,140 @@
 <html lang="en">
 
 <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waste Segregation</title>
     <style>
         body {
             background-color: black;
-            font-family: Arial, sans-serif;
+        }
+
+        .tag {
+            color: #ffffffbd;
+            font-size: x-large;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        ul li a:hover {
+            font-size: xx-large;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 1rem;
+        }
+
+        .responsive-h1 {
+            color: white;
+            font-size: xxx-large;
+            margin-left: 7vw;
+        }
+
+        .responsive-p {
+            color: white;
+            margin-bottom: 3px;
+            margin-top: 2.7rem;
+            margin-left: 1rem;
+            font-size: xx-large;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10rem;
+        }
+
+        .image-section {
+            margin-bottom: 2rem;
+            margin-left: 10%;
+        }
+
+        .image-section img {
+            margin-left: 12vw;
+            border-radius: 50px;
+            margin-top: 2rem;
+            width: 250px;
+            height: 250px;
+        }
+
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0; /* Reset margin for small screens */
+        }
+
+        .content-section h3,
+        .content-section p {
+            color: white;
+            font-size: xx-large;
+            margin-bottom: 0px;
+        }
+
+        .button-section {
+            margin-top: 2rem;
+            margin-left: 0; /* Reset margin for small screens */
+        }
+
+        .button-section button {
+            width: 80vw; /* Adjust as needed for responsiveness */
+            height: 2.5rem;
+            font-size: x-large;
+            margin-left: 0; /* Reset margin for small screens */
+        }
+
+        .hr-line {
+            width: 90vw;
+            margin-left: -20rem;
+            margin-top: 3rem;
+        }
+        
+            .header-container li {
+                margin-left: 0;
+                margin-right: 5px;
+                margin-top: 10px;
+            }
+
+            .responsive-h1 {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .responsive-p {
+                text-align: center;
+                margin-left: 0;
+            }
+
+            .image-section img {
+                margin-left: 0;
+            }
+
+            .content-section {
+                margin-left: 0;
+            }
+
+            .button-section {
+                margin-left: 0;
+            }
+
+            .button-section button {
+                width: 20vw;
+                margin-left: 0;
+            }
+
+            .hr-line {
+                margin-left: 0;
+            }
+
+        @media (max-width: 750px) {
+
+            body {
+            background-color: black;
         }
 
         .tag {
@@ -16,86 +144,131 @@
             text-decoration: none;
         }
 
-        ul {
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 1rem;
-            padding: 0;
-        }
-
-        li {
+        ul li {
             margin-left: 20px;
-            list-style: none;
         }
 
-        li a:hover {
+        ul li a:hover {
             font-size: xx-large;
         }
 
         .header-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: flex-end;
+            margin-right: 1rem;
         }
 
-        .logo,
-        .title {
-            margin: 10px;
+        .header-container li {
+            margin-left: 10px;
         }
 
-        .logo h1,
-        .title h1,
-        .subtitle,
-        p {
-            font-size: x-large;
+        .responsive-h1 {
             color: white;
-            text-align: center;
+            font-size: xxx-large;
+            margin-left: 7vw;
         }
 
-        #but1 {
-            width: 17vw;
-            height: 3rem;
+        .responsive-p {
+            color: white;
+            margin-bottom: 3px;
+            margin-top: 2.7rem;
+            margin-left: 1rem;
             font-size: xx-large;
-            background-color: #36367d;
-            color: cornsilk;
-            border-radius: 1rem;
-            cursor: pointer;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-section {
+            margin-bottom: 2rem;
+        }
+
+        .image-section img {
+            margin-left: 12vw;
+            border-radius: 50px;
             margin-top: 2rem;
+            width: 250px;
+            height: 250px;
         }
 
-        #but1:hover {
-            width: 18vw;
-            height: 3rem;
-            background-color: #323293;
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0; /* Reset margin for small screens */
         }
 
-        /* Adjustments for smaller screens */
-        @media only screen and (max-width: 768px) {
-            .header-container {
+        .content-section h3,
+        .content-section p {
+            color: white;
+            font-size: xx-large;
+            margin-bottom: 0px;
+
+        }
+
+        .button-section {
+            margin-left: 0; /* Reset margin for small screens */
+        }
+
+        .button-section button {
+            width: 20vw; /* Adjust as needed for responsiveness */
+            height: 2.5rem;
+            font-size: x-large;
+            margin-left: 0; /* Reset margin for small screens */
+        }
+
+        .hr-line {
+            width: 90vw;
+            margin-left: -20rem;
+            margin-top: 3rem;
+        }
+
+            .header-container li {
+                margin-left: 0;
+                margin-right: 5px;
                 margin-top: 10px;
             }
 
-            .logo,
-            .title {
-                margin: 5px;
+            .responsive-h1 {
+                margin-left: 0;
+                text-align: center;
             }
 
-            .subtitle,
-            p {
-                font-size: medium;
+            .responsive-p {
+                text-align: center;
+                margin-left: 0;
             }
 
-            #but1 {
-                width: 80%;
+            .image-section img {
+                margin-left: 0;
+            }
+
+            .content-section {
+                margin-left: 0;
+            }
+
+            .button-section {
+                margin-left: 0;
+            }
+
+            .button-section button {
+                width: 80vw;
+                margin-left: 0;
+            }
+
+            .hr-line {
+                margin-left: 0;
             }
         }
     </style>
 </head>
 
 <body>
+
     <header>
         <nav>
-            <ul>
+            <ul class="header-container">
                 <li><a class="tag" href="">Home</a></li>
                 <li><a class="tag" href="">About</a></li>
                 <li><a class="tag" href="">Join</a></li>
@@ -104,26 +277,67 @@
             </ul>
         </nav>
     </header>
-    <div class="header-container">
-        <div class="logo">
-            <h1>ECOSORT</h1>
+
+    <div class="responsive-h1">ECOSORT REVOLUTION </div>
+
+    <p class="responsive-p"> Join Our Community for a Greener Future!</p>
+
+    <div class="image-container">
+        <div class="image-section">
+            <div>
+                <img src="..\static\WhatsApp Image 2024-02-02 at 9.38.55 PM.jpeg" alt="Loading...">
+            </div>
+            <div class="content-section">
+                <h3> As a Supporter</h3>
+                <div>
+                    <p>
+                        Contribute to waste segregation  efforts by optimizing our  Solution.
+                    </p>
+                </div>
+                <div class="button-section">
+                    <button> Support us</button>
+                </div>
+                <!-- <hr class="hr-line"> -->
+            </div>
         </div>
-        <div class="title">
-            <h1>Automated Waste Segregation</h1>
+        <hr class="hr-line">
+        <div class="image-section">
+            <div>
+                <img src="..\static\WhatsApp Image 2024-02-02 at 9.39.50 PM.jpeg" alt="Loading...">
+            </div>
+            <div class="content-section">
+                <h3> As a Partner</h3>
+                <div>
+                    <p>
+                        ECOSORT offers waste Segregation  solutions to local communities,  businesses and
+                        organisations to reduce cost and time by  optimizing waste management  processes.
+                    </p>
+                </div>
+                <div class="button-section">
+                    <button>Partner with us</button>
+                </div>
+                <!-- <hr class="hr-line"> -->
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="image-section">
+            <div>
+                <img src="..\static\WhatsApp Image 2024-02-02 at 9.40.17 PM.jpeg" alt="Loading...">
+            </div>
+            <div class="content-section">
+                <h3> As a Collaborator</h3>
+                <div>
+                    <p>
+                        Join our team of passionate individuals working together towards a greener and safe space to live in.
+                    </p>
+                </div>
+                <div class="button-section">
+                    <button>Collaborate with us</button>
+                </div>
+            </div>
         </div>
     </div>
-    <p>Smart sorting, Smarter recycling</p>
-    <div>
-        <p class="subtitle">How ECOSORT Works?</p>
-    </div>
-    <hr style="width:73vw; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-    <div style="display:flex; margin: 0 7vw;">
-        <!-- Rest of the content remains unchanged -->
-    </div>
-    <hr style="width:73vw; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-    <div style="text-align: center;">
-        <button id="but1">Try Now</button>
-    </div>
+
 </body>
 
 </html>
